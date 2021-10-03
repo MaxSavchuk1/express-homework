@@ -1,0 +1,41 @@
+POST http://localhost:5001/messages
+Content-Type: application/json
+
+{
+  "text": "asdfkljjf;lskdjf;fsdfasdf",
+  "email": "qwer@qwer.qwer",
+  "createdAt": "2016-10-10"
+}
+###
+POST http://localhost:5001/messages
+Content-Type: application/json
+
+{
+  "text": "???????????",
+  "email": "anon@anon.net",
+  "createdAt": "2016-10-10"
+}
+###
+POST http://localhost:5001/messages
+Content-Type: application/json
+
+{
+  "text": "!!!!!!!!",
+  "email": "qwer@qwer.qwer",
+  "createdAt": "2016-10-10"
+}
+
+###
+GET http://localhost:5001/messages
+
+###
+PATCH http://localhost:5001/messages/e0cd39a5-1309-4a58-85f0-4ccd70aa5b94
+Content-Type: application/json
+
+{
+  "text": "???????????))))))",
+  "email": "qwer@qwer.qwer",
+  "createdAt": "2016-10-10"
+}
+
+###

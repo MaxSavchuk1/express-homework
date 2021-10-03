@@ -1,10 +1,11 @@
 const http = require('http');
 const app = require('./app');
 
-const PORT = 5000;
+const PORT = 5001;
+const HOST = 'localhost';
 
 const server = http.createServer(app);
 
-server.listen(PORT, () => {
-  console.log(`Lucky start at ${PORT} port`);
+server.listen(PORT, HOST, () => {
+  console.log(`Lucky start at http://${HOST}:${PORT}`);
 });
