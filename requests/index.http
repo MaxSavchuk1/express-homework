@@ -2,9 +2,9 @@ POST http://localhost:5001/messages
 Content-Type: application/json
 
 {
-  "text": "asdfkljjf;lskdjf;fsdfasdf",
-  "email": "qwer@qwer.qwer",
-  "createdAt": "2016-10-10"
+  "text": "first!",
+  "email": "qweer@asdf.co",
+  "createdAt": "2020-10-10"
 }
 ###
 POST http://localhost:5001/messages
@@ -13,23 +13,23 @@ Content-Type: application/json
 {
   "text": "???????????",
   "email": "anon@anon.net",
-  "createdAt": "2016-10-10"
+  "createdAt": "2020-10-10"
 }
 ###
 POST http://localhost:5001/messages
 Content-Type: application/json
 
 {
-  "text": "!!!!!!!!",
+  "text": "first!!!!!!!!",
   "email": "qwer@qwer.qwer",
-  "createdAt": "2016-10-10"
+  "createdAt": "2020-10-10"
 }
 
 ###
 GET http://localhost:5001/messages
 
 ###
-PATCH http://localhost:5001/messages/e0cd39a5-1309-4a58-85f0-4ccd70aa5b94
+PUT http://localhost:5001/messages/cd84cd8d-588e-4fa4-9c80-94677347d2b6
 Content-Type: application/json
 
 {
@@ -39,3 +39,5 @@ Content-Type: application/json
 }
 
 ###
+
+DELETE http://localhost:5001/messages/cd84cd8d-588e-4fa4-9c80-94677347d2b6

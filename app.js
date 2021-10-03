@@ -17,7 +17,11 @@ app.post(
   validate.validateMessage,
   messagesController.createMessage
 );
-app.patch('/messages/:msgId', messagesController.updateMessage);
+app.put(
+  '/messages/:msgId',
+  validate.validateMessage,
+  messagesController.updateMessage
+);
 app.delete('/messages/:msgId', messagesController.deleteMessage);
 
 app.use((err, req, res, next) => {

@@ -14,7 +14,10 @@ module.exports.validateMessage = async (req, res, next) => {
       .string()
       .email()
       .required(),
-    createdAt: yup.date(),
+    createdAt: yup
+      .date()
+      .max(new Date())
+      .required(),
   });
   try {
     const validatedMessage = await MESSAGE_SCHEMA.validate(body);

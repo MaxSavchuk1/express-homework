@@ -29,7 +29,7 @@ module.exports.updateMessage = (req, res) => {
   } = req;
   const { body } = req;
   const updatedMessage = Message.updateMessage(msgId, body);
-  res.status(200).send(updatedMessage);
+  res.status(201).send(updatedMessage);
 };
 
 module.exports.deleteMessage = (req, res) => {
